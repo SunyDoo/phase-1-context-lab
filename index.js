@@ -1,5 +1,5 @@
 /* Your Code Here */
-const createEmployeeRecord =(array)=>{
+const createEmployeeRecord =function (array){
     return{
         firstName: array[0],
         familyName: array[1],
@@ -10,7 +10,7 @@ const createEmployeeRecord =(array)=>{
     } 
 }
 
-const createEmployeeRecords = (employeeArr)=>{
+const createEmployeeRecords = function(employeeArr){
     return employeeArr.map(rec=>createEmployeeRecord(rec))     
 } 
 
